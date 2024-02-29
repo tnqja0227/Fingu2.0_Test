@@ -1,7 +1,10 @@
 version: "3.9"  
 services:
-  chatbot:
-    build: .
+  web:
+    container_name: fingu2.0
+    build: 
+      context: ..
+      dockerfile: docker/Dockerfile
     ports:
       - "7860:7860" 
     environment:
