@@ -1,0 +1,8 @@
+version: "3.9"  
+services:
+  chatbot:
+    build: .
+    ports:
+      - "7860:7860" 
+    environment:
+      - OPENAI_API_KEY=your_actual_openai_api_key 
